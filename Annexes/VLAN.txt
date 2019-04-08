@@ -1,4 +1,4 @@
-Création 
+Création et nommage des VLAN (Switch niveau 3 data center):
 
 enable
 conf t
@@ -41,6 +41,60 @@ name Informatique_dev
 
 vlan 130 
 name Informatique_infrastructure
+
+
+
+
+Mise en place des noms et des mots de passe sur les switchs :
+
+enable
+conf t
+
+enable secret cesi
+hostname ""
+
+
+
+copy running-config startup-config
+
+
+
+Mise en place du VTP :
+
+conf t
+vtp mode server
+vtp domain CESI
+vtp password cesi
+
+
+enable
+conf t
+vtp mode transparent
+vtp domain Vergis
+vtp password cesi
+
+enable
+conf t
+vtp mode client
+vtp domain Vergis
+vtp password cesi
+
+
+
+enable
+conf t
+int range gigabitEthernet 1/0/1-9
+switchport trunk encapsulation dot1q
+switch port mode trunck
+switchport trunk native vlan 99
+
+
+
+
+
+
+
+
 
 
 
