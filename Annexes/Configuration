@@ -1,0 +1,49 @@
+Création et nommage VLAN :
+
+enable
+conf t
+
+vlan 10 
+name Administration
+
+vlan 20 
+name Logistique
+
+vlan 30 
+name Informatique_support
+
+vlan 40 
+name Comptabilité
+
+vlan 50 
+name Secretariat
+
+vlan 60 
+name Recherche_developement 
+
+vlan 70 
+name Direction
+
+vlan 80 
+name RH
+
+vlan 90 
+name Secretariat_direction
+
+vlan 100 
+name Commutation
+
+vlan 110 
+name support_clients
+
+vlan 120 
+name Informatique_dev
+
+vlan 130 
+name Informatique_infrastructure
+
+
+
+
+
+
