@@ -3,7 +3,7 @@ Création
 enable
 conf t
 
-vlan 10 
+vlan 99 
 name Administration
 
 vlan 20 
@@ -13,7 +13,7 @@ vlan 30
 name Informatique_support
 
 vlan 40 
-name Comptabilité
+name Comptabilite
 
 vlan 50 
 name Secretariat
