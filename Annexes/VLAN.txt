@@ -99,13 +99,13 @@ switchport trunk native vlan 99
 enable 
 conf t
 int range FastEthernet 0/1-2
-switchport acces vlan 140
+switchport acces vlan(avec le vlan choisis)
 switchport mode access
 
 
 
 
-(avec le vlan choisis)
+
 
 
 
