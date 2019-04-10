@@ -114,3 +114,37 @@ ip default gateway 192.168.99.1
 conf t
 vtp mode transparent
 
+en
+conf t 
+
+
+
+
+interface fastethernet 0/1.140
+encapsulation dot1q 140
+ip address 192.168.140.1 255.255.255.0
+ip helper-address 192.168.10.20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
