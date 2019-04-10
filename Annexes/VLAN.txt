@@ -103,13 +103,14 @@ switchport acces vlan(avec le vlan choisis)
 switchport mode access
 
 
+site 1 51/80
+
+int vlan 99 
+ip address 192.168.99.51 255.255.255.0
+ip default gateway 192.168.99.1 
 
 
 
-
-
-
-
-
-
+conf t
+vtp mode transparent
 
